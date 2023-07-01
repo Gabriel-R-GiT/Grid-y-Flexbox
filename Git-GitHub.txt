@@ -1,0 +1,55 @@
+git init
+
+git add      y el nombre de los archivos que vamos a cargar
+
+git add .   (cargamos todos los archivos a la vez)
+
+git status  nos muestra los archivos que se encuentran dentro de la carpeta que vamos a subir
+    (si salen en rojo aún no los hemos cargado si estan en verde si)
+
+git commit -m "nombre del commit (lo que hemos añadido o mejorado)"
+
+git remote add origin https://github.com/Gabriel-R-GiT/nombre-del-repositorio.git (pegamos el código que copiamos del repositorio de GitHub)
+
+git push -u origin master (subimos archivos al repositorio de GitHub)
+
+ más comandos
+
+    clear  para limpiar la terminal
+    ls     para ver el listado de archivos dentro de la carpeta que nos encontramos
+
+    git rm  (y nombre del archivo) borramos un archivo
+
+    git mv index.html nuevoindex.html (así renombramos un archivo)
+    git status para ver como se ha renombrado   renamed: index.html -> nuevoindex.html
+
+    git log para ver todo el listado de commits (sale nombre de autor y email)
+    git log --oneline (se ve mucho más resumido) solo sale el listado de commits
+
+    git revert (El comando git revert deshará el commit que le hemos indicado, pero creará un nuevo commit deshaciendo la anterior:)
+               (La ventaja de utilizar git revert es que no afecta al commit histórico. Esto significa que puedes seguir viendo todos
+               los commits en tu histórico, incluso los revertidos.
+               Otra medida de seguridad es que todo sucede en local a no ser que los enviemos al repositorio remoto. Por esto es que 
+               git revert es más seguro de usar y es la manera preferida para deshacer los commit)
+
+    git branch para saber en que rama nos encontramos
+    git checkout -b  (y nombre de la rama que vamos a crear y ya estamos dentro de ella) 
+                    ejemplo git checkout -b rama2
+    git add ...
+    git commit -m "nombre de lo añadido o modificado"
+    git push -u origin rama2   (subimos a GitHub los cambios de esta rama2)           
+
+    git checkout (nombre de la rama) y cambiamos a esa rama
+                  ejemplo git checkout main
+    git branch  para verificar en que rama estamos en este caso en rama2
+
+    -- Para TRAER LOS CAMBIOS DE RAMA2 A MAIN (merge) -- 
+    Debemos estar en main
+    git merge (seguido del nombre de la rama que queremos traer)
+               en este caso git merge rama2
+
+               se fusionan las ramas y a su vez hace un commit con nombre Merge branch 'rama2'
+
+
+-- Git clone -- PARA CLONAR(la última versión de un proyecto) UN REPOSITORIO DE GitHub ya existente
+git clone <https://link-con-nombre-del-repositorio>
