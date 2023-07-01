@@ -1,13 +1,9 @@
 1 - Creamos el repositorio en la web de GitHub
 
-2 - Si queremos podemos añadirle el archivo readme
-
-3 - Copiamos el código que nos da https://
-
-4 - Creamos algunos archivos index.html o styles.css o
+2 - Creamos algunos archivos index.html o styles.css o
     Utilizamos una carpeta con un proyecto ya existente con su html y css
 
-5 - git init (para iniciar)
+3 - git init (para iniciar)
 
 
 --INICIO INSTRUCCIONES FUNDAMENTALES--
@@ -20,22 +16,22 @@ git push -u origin main (subimos a GitHub que hemos creado esta rama main)
 --FIN INSTRUCCIONES FUNDAMENTALES--
 
 
-6 - git status  nos muestra los archivos que se encuentran dentro de la carpeta que vamos a subir
+4 - git status  nos muestra los archivos que se encuentran dentro de la carpeta que vamos a subir
     (al principio salen en rojo porque aún no los hemos cargado)
 
-7 - git add    y el nombre de los archivos que vamos a cargar (index.html)
+5 - git add    y el nombre de los archivos que vamos a cargar (index.html)
 
-8 - git status (nos mortraría el archivo html en verde y el css en rojo porque aún no está cargado)
+6 - git status (nos mortraría el archivo html en verde y el css en rojo porque aún no está cargado)
 
-9 - git add .   (cargamos todos los archivos a la vez)
+7 - git add .   (cargamos todos los archivos a la vez)
 
-10 - git commit -m "nombre del commit (lo que hemos añadido o mejorado)"
+8 - git commit -m "nombre del commit (lo que hemos añadido o mejorado)"
 
-11 - git push -u origin main (a ahora sí hemos subido los archivos al repositorio de GitHub)
+9 - git push -u origin main (a ahora sí hemos subido los archivos al repositorio de GitHub)
 
-12 - vamos a la web de GitHub 
+10 - vamos a la web de GitHub 
 
-13 - más comandos
+11 - más comandos
 
     clear  para limpiar la terminal (tanto en vscode como en Git Bash)
     ls     para ver el listado de archivos dentro de la carpeta que nos encontramos
