@@ -4,8 +4,8 @@ git add      y el nombre de los archivos que vamos a cargar
 
 git add .   (cargamos todos los archivos a la vez)
 
-git status  nos muestra los archivos que se encuentran dentro de la carpeta que vamos a subir
-    (si salen en rojo aún no los hemos cargado si estan en verde si)
+git status  muestra los archivos que se encuentran dentro de la carpeta que vamos a subir
+            (si salen en rojo aún no los hemos cargado si estan en verde si)
 
 git commit -m "nombre del commit (lo que hemos añadido o mejorado)"
 
@@ -15,8 +15,8 @@ git push -u origin master (subimos archivos al repositorio de GitHub)
 
  más comandos
 
-    clear  para limpiar la terminal
-    ls     para ver el listado de archivos dentro de la carpeta que nos encontramos
+    clear  limpiar la terminal
+    ls     listado de archivos dentro de la carpeta que nos encontramos
 
     git rm  (y nombre del archivo) borramos un archivo
 
@@ -24,7 +24,7 @@ git push -u origin master (subimos archivos al repositorio de GitHub)
     git status para ver como se ha renombrado   renamed: index.html -> nuevoindex.html
 
     git log para ver todo el listado de commits (sale nombre de autor y email)
-    git log --oneline (se ve mucho más resumido) solo sale el listado de commits
+    git log --oneline (se ve más resumido) solo sale el listado de commits
 
     git revert (El comando git revert deshará el commit que le hemos indicado, pero creará un nuevo commit deshaciendo la anterior:)
                (La ventaja de utilizar git revert es que no afecta al commit histórico. Esto significa que puedes seguir viendo todos
@@ -40,16 +40,15 @@ git push -u origin master (subimos archivos al repositorio de GitHub)
     git push -u origin rama2   (subimos a GitHub los cambios de esta rama2)           
 
     git checkout (nombre de la rama) y cambiamos a esa rama
-                  ejemplo git checkout main
-    git branch  para verificar en que rama estamos en este caso en rama2
+                  ejemplo git checkout master
+    git branch  para verificar en que rama estamos en este caso en master
 
-    -- Para TRAER LOS CAMBIOS DE RAMA2 A MAIN (merge) -- 
-    Debemos estar en main
+    -- Para TRAER LOS CAMBIOS DE RAMA2 A MASTER (merge) -- 
+    Debemos estar en master
     git merge (seguido del nombre de la rama que queremos traer)
                en este caso git merge rama2
 
                se fusionan las ramas y a su vez hace un commit con nombre Merge branch 'rama2'
 
-
--- Git clone -- PARA CLONAR(la última versión de un proyecto) UN REPOSITORIO DE GitHub ya existente
+-- Git clone -- CLONA UN REPOSITORIO DE GitHub (la última versión) ya existente
 git clone <https://link-con-nombre-del-repositorio>
